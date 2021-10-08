@@ -12,8 +12,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  String studentName, studentDepartment;
-  double studentID, studentCG;
+  String studentName, studentDepartment, studentUniversity;
+  double studentID;
 
   void getStudentName(name) {
     this.studentName = name;
@@ -27,8 +27,8 @@ class _HomePageState extends State<HomePage> {
     this.studentDepartment = department;
   }
 
-  void getStudentCG(cg) {
-    this.studentCG = double.parse(cg);
+  void getStudentUniversity(university) {
+    this.studentUniversity = university;
   }
 
   void createData() {
@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
       "studentName": studentName,
       "studentID": studentID,
       "studentDepartment": studentDepartment,
-      "studentCG": studentCG,
+      "studentUniversity": studentUniversity,
     };
     documentReference.set(students).whenComplete(
       () {
@@ -66,7 +66,7 @@ class _HomePageState extends State<HomePage> {
       "studentName": studentName,
       "studentID": studentID,
       "studentDepartment": studentDepartment,
-      "studentCG": studentCG,
+      "studentUniversity": studentUniversity,
     };
     documentReference.set(students).whenComplete(
       () {
@@ -142,17 +142,17 @@ class _HomePageState extends State<HomePage> {
                   },
                 ),
                 InputField(
+                  label: "University ",
+                  hintText: 'Enter university name',
+                  onChanged: (String university) {
+                    getStudentUniversity(university);
+                  },
+                ),
+                InputField(
                   label: "Department",
                   hintText: 'Enter department',
                   onChanged: (String department) {
                     getStudentDepartment(department);
-                  },
-                ),
-                InputField(
-                  label: "CGPA",
-                  hintText: 'Enter CGPA',
-                  onChanged: (String cg) {
-                    getStudentCG(cg);
                   },
                 ),
               ],
