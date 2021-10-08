@@ -2,7 +2,7 @@
 
 In computer programming, create, read, update, and delete are the four basic operations of persistent storage. CRUD is also sometimes used to describe user interface conventions that facilitate viewing, searching, and changing information using computer-based forms and reports.
 
-<img src="https://user-images.githubusercontent.com/60808266/136536062-c18aaa8f-c0e9-48a1-9602-d39f271ac2a1.PNG">
+<img src="https://user-images.githubusercontent.com/60808266/136537450-34a53afe-31e2-4974-a100-0639ace733fe.PNG">
 
 [![develop-with-arnob](https://img.shields.io/badge/Develop%20with-Arnob%20Mahmud-1f425f.svg?style=plastic&logo=visual-studio-code&logoColor=007ACC&labelColor=c3c4d5&color=193507)](https://github.com/ArnobMahmud/)&nbsp;
 
